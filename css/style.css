@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family= Calistoga & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NavBar */
+.logo{
+    width: 200px;
+    height: 65px;
+}
+.navbar{
+    background-color: #101529;
+}
+.nav-link{
+    font-size: 1.3em;
+}
+.collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20vw;
+}
+.dropdown{
+    margin-left: 20vw;
+}
+.navbar-brand{
+    width: 200px;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.dropdown-menu{
+    background-color: #101529;
+}
+.dropdown-item{
+    background-color: #101529;
+    color: #fff;
+    
+} 
+
+
+
+/* Fotter */
+footer{
+    background-color: #101529;
+    color: #fff;
+}
+.left{
+    border-right: #fff 1px solid;
+    margin: 5vh 0;
+}
+.left h5{
+    margin-top: 2vh;
+}
+.right{
+    margin: 5vh 0;
+}
+.right h3{
+    text-align: left;
+    margin-left: 4vw;
+}
+.redes{
+    display: flex;
+    text-align: left;
+}
+.redes p{
+    margin: 0;
+    font-size: 18px;
+    margin-left: 15px;
+}
+i{
+    font-size: 22px;
+    margin-left: 4vw;
+}
+body{
+    background-color: #0c163c;
+}
+
+/* Banner */
+
+.banner{
+    background-image: url(../imgs/banner.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 30vh;
+}
+.banner h1{
+    font-size: 200%;
+}
+/*  */
+
+.groupButton{
+    background-color: #000518;
+    padding-top: 2vh;
+}
+
+/* Efeito do botao de trocar os dias */
+
+#selecionado{
+    background-color: #08164E;
+}
+#selecionado:hover{
+    background-color: #bababa;
+}
+
+/*  */
+
+#oculto{
+    display: none;
+}
+
+/*  */
+
+.error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error img{
+    width: 40%;
+}
+
+/*  */
+
+.grid{
+    background-color: #08164E;
+    padding: 5vh 0;
+    color: #fff;
+}
+
+/* Responsividade do Footer */
+
+@media screen and (max-width: 767px) {
+    .right h3{
+        display: none;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        
+        margin-top: 2vh;
+    }
+    .left{
+        margin-bottom: 0;
+        border-right: 0;
+    }
+    .redes{
+        display: flex;
+        flex-wrap: nowrap;
+    }   
+    .collapse{
+        margin-left: 10vw;
+    }
+    .dropdown{
+        margin-left: 10vw;
+    } 
+}
+
+@media screen and (max-width: 520px) {    
+    .right{
+        display: flex;
+        flex-wrap: wrap;       
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2vh 0;
+    }         
+}
+
+
+@media screen and (max-width: 450px) {    
+    .collapse{
+        margin-left: 0;
+    }
+    .dropdown{
+        margin-left: 0;
+    }
+        
+}

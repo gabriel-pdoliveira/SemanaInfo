@@ -1,0 +1,77 @@
+
+.groupButton .col-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupButton .col-3 a{
+    padding: 3vh 5vw;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.groupButton .col-3 a:hover{
+    color: #000000;
+    background-color: #bababa;
+}
+
+/* Conteudo */
+
+.grade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grade .header {
+    background-color: #000518;
+    width: 71.5vw;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 5vh;
+}
+.grade .header h3{
+    margin: 8px 0;
+}
+.imgs{
+    width: 71.5vw;
+    display: flex;
+    background-color: #000518;
+    /* padding: 5px 0; */
+}
+.imgs img{
+    margin: 5px 0;
+}
+.palestrante{
+    width: 30vw;
+}
+.palestrante img{
+    width: 100%;
+    border-radiuS: 100%;
+}
+.palestras{
+    width: 41.5vw;
+}
+.palestras img{
+    width: 100%;
+}
+.descricao{
+    width: 71.5vw;
+    text-align: center;
+    background-color: #000518;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.descricao h2{
+    width: 100%;
+    margin: 8px 0;
+}
+.descricao p{
+    width: 100%;
+    margin: 8px 0;
+}

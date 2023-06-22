@@ -1,0 +1,145 @@
+:root{
+    --total-brand:10;
+    --logo-width: 18rem;
+    --total-logo-width: calc(var(--total-brand)*var(--logo-width)*2);
+}
+.slider{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.slider::before,
+.slider::after{
+    position: absolute;
+    width: var(--logo-width);
+}
+.slider .brands{
+    list-style: none;
+    width: var(--total-logo-width);
+    display: flex;
+    animation: slideLeft 60s linear infinite;
+    margin: 0;
+}
+
+@keyframes slideLeft {
+    100%{transform: translateX(-100%);}
+}
+
+.brands .brand-logo{
+    width: var(--logo-width);
+    text-align: center;
+    margin-left: 10rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.brand-logo img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+.groupButton .col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupButton .col-4 a {
+    padding: 3vh 5vw;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.groupButton .col-4 a:hover {
+    color: #000000;
+    background-color: #bababa;
+    cursor: pointer;
+}
+
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+}
+
+.img {
+    width: 20vw;
+}
+
+.img img {
+    width: 100%;
+}
+
+.desc {
+    background-color: #000518;
+    width: 40vw;
+    text-align: center;
+}
+
+.desc .infoPalestrantes {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.desc h3 {
+    background-color: #000B36;
+    padding: 1vh 3vw;
+    font-size: 1.7em;
+}
+
+
+
+.desc p {
+    padding: 0 2vw;
+    padding-top: 2vh;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width: 800px) {
+    .bloco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        width: 70vw;
+    }
+
+    .img {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .marquee img {
+        width: 90px;
+        margin-left: 10vw;
+        object-fit: contain;
+    }
+}
